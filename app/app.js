@@ -14,8 +14,6 @@ App = Ember.Application.extend({
   Resolver: Resolver
 });
 
-App.ApplicationAdapter = DS.FixtureAdapter;
-
 loadInitializers(App, config.modulePrefix);
 
 export default App;

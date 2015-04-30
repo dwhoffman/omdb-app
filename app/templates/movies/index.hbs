@@ -1,5 +1,12 @@
 <ul>
-{{#each movie in model}}
-<li>{{movie.name}}</li>
-{{/each}}
+  {{#each movie in model}}
+    <li>
+      {{#link-to 'movies.movie.index' movie}}
+        {{movie.name}}
+      {{/link-to}}
+    </li>
+  {{/each}}
 </ul>
+<div class="container-fluid">
+  {{outlet}}
+</div>
